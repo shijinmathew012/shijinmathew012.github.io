@@ -1,1 +1,28 @@
-bc
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fyers Buy Button</title>
+    <script src="https://api-connect-docs.fyers.in/fyers-lib.js"></script>
+</head>
+<body>
+
+    <h1>Place an Order with Fyers</h1>
+    <p>Click the button below to initiate a buy order for SBIN:</p>
+
+    <!-- Fyers Buy Button -->
+    <fyers-button 
+        data-fyers="API_KEY" 
+        data-symbol="NSE:SBIN-EQ"
+        data-product="INTRADAY"
+        data-quantity="1"
+        data-price="102"
+        data-order_type="LIMIT"
+        data-transaction_type="BUY">
+    </fyers-button>
+
+    <p>Please ensure you are logged in to your Fyers account before placing the order.</p>
+
+</body>
+</html>
